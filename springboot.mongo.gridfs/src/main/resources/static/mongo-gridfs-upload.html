@@ -29,7 +29,7 @@ Author: Eric Bidelman (ericbidelman@chromium.org)
     <!-- <a href="http://123.160.236.172:8088/mongo-grid/download?id=01cd8172c60a4850bcfc6ec5ec5c8e4a">xxx</a>
     <a href="http://123.160.236.172:8088/mongo-grid/download?id=01cd8172c60a4850bcfc6ec5ec5c8e4a11111">xxx</a>
     -->
-    <!-- <div class="">
+     <div class="">
 
         <td>多个上传:</td>
         <td><input class="mongo-gridfs-upload" type="file" multiple/></td>
@@ -45,7 +45,6 @@ Author: Eric Bidelman (ericbidelman@chromium.org)
        <input type="button" onclick="test();" value="提交" />
     </div>
 
- -->
 
 
     <input type="file" name="afile" id="afile" accept="image/*" />
@@ -54,8 +53,8 @@ Author: Eric Bidelman (ericbidelman@chromium.org)
     <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
     </script>
 
-    <!-- <script src="mongo-gridfs-upload.js">
-    </script> -->
+     <script src="mongo-gridfs-upload.js">
+    </script>
     <script>
         //单文件上传
         function upload() {
@@ -89,15 +88,15 @@ Author: Eric Bidelman (ericbidelman@chromium.org)
 
 
 
-        // function uploadCall(data) {
-        //     alert(data.msg);
-        // }
+         function uploadCall(data) {
+             alert(data.msg);
+         }
 
-        // function test() {
+         function test() {
 
-        //     // MongoGridfsUpload.upload("http://localhost:8088/mongo-grid/upload", uploadCall);
-        //     MongoGridfsUpload.upload("http://localhost:8088/mongo-grid/upload", uploadCall);
-        // }
+             // MongoGridfsUpload.upload("http://localhost:8088/mongo-grid/upload", uploadCall);
+             MongoGridfsUpload.upload("http://localhost:8088/mongo-grid/upload", uploadCall);
+         }
 
         //自动上传
 
